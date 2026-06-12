@@ -1,0 +1,15 @@
+# Logs
+logs
+*.log
+
+# Dependencies
+node_modules/
+
+# Production build output
+dist/
+
+# Mac OS folder clutter
+.DS_Store
+
+# Environment variables
+.env
