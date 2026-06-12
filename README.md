@@ -1,12 +1,12 @@
 🏗️ BIM-AI Interrogator
-An autonomous, natural-language AI agent integrated directly with Autodesk Platform Services (APS). Built to demonstrate the intersection of Large Language Models and Hypergranular BIM for the "Digital Construction and AI: Who’s in Control?" event at UWE Bristol.
+An autonomous, natural-language AI agent integrated directly with Autodesk Platform Services (APS). Built to demonstrate the intersection of Large Language Models and Hypergranular BIM.
 
 This application allows users to upload Revit (.rvt) models, run strict ISO-style metadata compliance checks (The Gatekeeper), and use a conversational AI interface to instantly query, isolate, and count specific 3D elements based on deep property dictionary searches.
 
 ✨ Core Features
 The Gatekeeper (Data Compliance): A rigorous pre-check protocol that halts interaction until the uploaded model passes structural data requirements (e.g., forcing valid Uniclass strings within Assembly Code or custom VIISP_Uniclass project parameters). Includes a cloud-purge "Kill Switch" for non-compliant models.
 
-Natural Language Interrogation: Powered by Google's Gemini 1.5 Flash model, users can type everyday questions (e.g., "Show me all the fire-rated doors on Level 2") instead of writing complex database queries.
+Natural Language Interrogation: Powered by Google's Gemini 2.5 Flash model, users can type everyday questions (e.g., "Show me all the fire-rated doors on Level 2") instead of writing complex database queries.
 
 The "Smart Bracket Hunter" Algorithm: A custom two-pass recursive extraction script that prevents the AI from falling into the "Leaf Trap." It accurately filters out nested families (like window trims or door handles) to ensure the AI only isolates and counts true top-level Revit Instances.
 
@@ -47,6 +47,7 @@ APS_CLIENT_SECRET="your_autodesk_client_secret"
 APS_BUCKET="your_custom_bucket_name_lower_case"
 GEMINI_API_KEY="your_google_gemini_key"
 PORT=8080
+
 Start the application:
 
 Bash
